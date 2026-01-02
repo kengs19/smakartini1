@@ -6,8 +6,13 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #f4f7f8;
-    padding-top: 70px;
+    /*padding-top: 70px;*/
     color: #333;
+}
+
+.section {
+    margin-bottom: 3rem;
+    padding: 4.5rem 0;
 }
 
 /* HEADER */
@@ -664,4 +669,5 @@ h3 { font-size: clamp(1.1rem, 3vw, 1.6rem); }
 
 .faq-item p {
     font-size: 0.95rem;
+
 }
