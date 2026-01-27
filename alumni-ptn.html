@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SMA KARTINI 1 JAKARTA</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/Logo-Sekolah.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f7f8;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #004d99;
+            color: white;
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1.5rem;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            height: 50px;
+            width: auto;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #003366;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 70px auto 40px auto;
+            padding: 2rem 1rem;
+        }
+
+        h2 {
+            color: #004d99;
+            font-size: 2rem;
+            margin: 0 0 2rem 0;
+            text-align: center;
+        }
+
+        p.section-subtitle {
+            color: #003366;
+            font-size: 1.1rem;
+            margin: 0 0 3rem 0;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        /* ALUMNI LIST */
+        .alumni-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .alumni-item {
+            display: flex;
+            gap: 1.5rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .alumni-item:last-child {
+            border-bottom: none;
+        }
+
+        .alumni-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .alumni-info {
+            flex: 1;
+            text-align: left;
+        }
+
+        .alumni-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #004d99;
+            margin: 0 0 0.3rem 0;
+        }
+
+        .alumni-details {
+            font-size: 1rem;
+            color: #444;
+            margin: 0;
+        }
+
+        .alumni-ptn {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #d32f2f;
+            margin: 0.3rem 0 0 0;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .alumni-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .alumni-item img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .alumni-info {
+                width: 100%;
+            }
+        }
+
+        footer {
+            background: #004d99;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+
+        a {
+            color: #004d99;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/Logo-Sekolah.png" alt="Logo Sekolah" class="logo" onclick="window.location.href='index.html'" />
+            <h1>SMA KARTINI 1 JAKARTA</h1>
+        </div>
+        <nav>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <ul class="nav-list">
+                <li><a href="index.html#info">Beranda</a></li>
+                <li><a href="index.html#galeri">Galeri</a></li>
+                <li><a href="index.html#kontak">Kontak</a></li>
+                <li><a href="index.html#alamat">Alamat</a></li>
+                <li><a href="alumni-ptn.html">Alumni PTN</a></li>
+                <li><a href="https://smakartini1jkt.scola.id/auth/login" target="_blank">e-Learning</a></li>
+                <li><a href="pendaftaran.html" class="active">Pendaftaran</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Alumni SMA KARTINI 1 JAKARTA</h2>
+        <p class="section-subtitle">Alumni SMA Kartini 1 Jakarta yang Diterima di Perguruan Tinggi Negeri (PTN)</p>
+
+        <ul class="alumni-list">
+            <li class="alumni-item">
+                <img src="images/alumni1.jpg" alt="Foto Alumni 1">
+                <div class="alumni-info">
+                    <div class="alumni-name">Nama Lengkap 1</div>
+                    <div class="alumni-details">Tahun Kelulusan: 2020</div>
+                    <div class="alumni-ptn">Jurusan: S1 Teknik Informatika</div>
+                    <div class="alumni-ptn">PTN: Universitas Indonesia (UI)</div>
+                </div>
+            </li>
+            <li class="alumni-item">
+                <img src="images/alumni2.jpg" alt="Foto Alumni 2">
+                <div class="alumni-info">
+                    <div class="alumni-name">Nama Lengkap 2</div>
+                    <div class="alumni-details">Tahun Kelulusan: 2021</div>
+                    <div class="alumni-ptn">Jurusan: S1 Fisioterapi</div>
+                    <div class="alumni-ptn">PTN: Universitas Padjadjaran (UNPAD)</div>
+                </div>
+            </li>
+            <li class="alumni-item">
+                <img src="images/alumni3.jpg" alt="Foto Alumni 3">
+                <div class="alumni-info">
+                    <div class="alumni-name">Nama Lengkap 3</div>
+                    <div class="alumni-details">Tahun Kelulusan: 2022</div>
+                    <div class="alumni-ptn">Jurusan: S1 Pendidikan Guru Sekolah Dasar</div>
+                    <div class="alumni-ptn">PTN: Universitas Negeri Jakarta (UNJ)</div>
+                </div>
+            </li>
+            <li class="alumni-item">
+                <img src="images/alumni4.jpg" alt="Foto Alumni 4">
+                <div class="alumni-info">
+                    <div class="alumni-name">Nama Lengkap 4</div>
+                    <div class="alumni-details">Tahun Kelulusan: 2023</div>
+                    <div class="alumni-ptn">Jurusan: S1 Hukum</div>
+                    <div class="alumni-ptn">PTN: Universitas Gadjah Mada (UGM)</div>
+                </div>
+            </li>
+            <li class="alumni-item">
+                <img src="images/alumni5.jpg" alt="Foto Alumni 5">
+                <div class="alumni-info">
+                    <div class="alumni-name">Nama Lengkap 5</div>
+                    <div class="alumni-details">Tahun Kelulusan: 2024</div>
+                    <div class="alumni-ptn">Jurusan: S1 Kedokteran</div>
+                    <div class="alumni-ptn">PTN: Universitas Airlangga (UNAIR)</div>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; SMA KARTINI 1 JAKARTA - RH (2025) <i>V-0.1.0</i></p>
+        <div class="social-icons">
+            <span onclick="window.open('https://www.instagram.com/go_sma_kartini?igsh=dXlpMWw5bnR3eXZu')"><i class="fab fa-instagram"></i></span>
+        </div>
+    </footer>
+
+    <script>
+        // Menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('nav ul.nav-list');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navList.contains(e.target) && !menuToggle.contains(e.target)) {
+                navList.classList.remove('show');
+            }
+        });
+
+        // Logo click
+        document.querySelector('.logo').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
